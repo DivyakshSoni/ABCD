@@ -13,7 +13,7 @@ function App() {
         {/* Sidebar */}
         <aside className="w-64 border-r border-secondary bg-surface/80 backdrop-blur-md flex flex-col">
           <div className="p-6 flex items-center gap-3">
-            <div className="p-2 bg-primary/20 rounded-lg shadow-[0_0_15px_rgba(201,181,156,0.5)]">
+            <div className="p-2 bg-primary/20 rounded-lg shadow-[0_0_15px_rgba(33,150,243,0.5)]">
               <Shield className="w-6 h-6 text-primary" />
             </div>
             <span className="text-xl font-bold tracking-tight text-textPrimary">VisionTrust AI</span>
