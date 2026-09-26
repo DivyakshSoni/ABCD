@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #0B0F19;
-  --color-surface: #151A29;
-  --color-primary: #3B82F6;
-  --color-secondary: #8B5CF6;
+  --color-background: #F9F8F6;
+  --color-surface: #EFE9E3;
+  --color-secondary: #D9CFC7;
+  --color-primary: #C9B59C;
   --color-success: #10B981;
   --color-warning: #F59E0B;
   --color-danger: #EF4444;
-  --color-textPrimary: #F3F4F6;
-  --color-textSecondary: #9CA3AF;
+  --color-textPrimary: #2C2C2C;
+  --color-textSecondary: #5C5C5C;
 }
 
 @layer base {
@@ -21,7 +21,7 @@
   }
   
   ::selection {
-    background-color: rgba(59, 130, 246, 0.3); /* primary/30 */
+    background-color: rgba(201, 181, 156, 0.3); /* primary/30 */
   }
 }
 
@@ -29,9 +29,8 @@
   .card {
     background-color: var(--color-surface);
     border-radius: 0.75rem;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    backdrop-filter: blur(4px);
+    border: 1px solid var(--color-secondary);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
   }
   .btn-primary {
     padding: 0.5rem 1rem;
@@ -41,24 +40,24 @@
     font-weight: 500;
     transition-property: all;
     transition-duration: 200ms;
-    box-shadow: 0 0 15px rgba(59,130,246,0.3);
+    box-shadow: 0 4px 10px rgba(201, 181, 156, 0.4);
   }
   .btn-primary:hover {
-    background-color: rgba(59, 130, 246, 0.9);
-    box-shadow: 0 0 25px rgba(59,130,246,0.5);
+    background-color: #B5A188; /* slightly darker primary */
+    box-shadow: 0 6px 15px rgba(201, 181, 156, 0.6);
   }
   .btn-secondary {
     padding: 0.5rem 1rem;
-    background-color: var(--color-surface);
+    background-color: var(--color-background);
     color: var(--color-textPrimary);
     border-radius: 0.5rem;
     font-weight: 500;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--color-secondary);
     transition-property: all;
     transition-duration: 200ms;
   }
   .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--color-surface);
   }
   .badge-success {
     padding: 0.25rem 0.5rem;

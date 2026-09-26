@@ -34,7 +34,7 @@ const Reports = () => {
         <div className="card p-6 flex flex-col opacity-50">
           <div className="flex justify-between items-start mb-4">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-white/10 rounded-lg text-gray-400">
+              <div className="p-3 bg-black/10 rounded-lg text-textSecondary">
                 <FileText className="w-6 h-6" />
               </div>
               <div>

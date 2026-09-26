@@ -11,7 +11,7 @@ const TrustGraph = () => {
       
       <div className="flex-1 card p-6 relative overflow-hidden flex items-center justify-center">
         {/* Placeholder for D3 / React Flow. For MVP we use a simple flex layout of nodes. */}
-        <div className="absolute top-4 left-4 flex gap-4 text-sm text-textSecondary bg-background/50 p-3 rounded-lg border border-white/5 backdrop-blur-md">
+        <div className="absolute top-4 left-4 flex gap-4 text-sm text-textSecondary bg-background/50 p-3 rounded-lg border border-black/5 backdrop-blur-md">
           <div className="flex items-center gap-2"><div className="w-3 h-3 rounded-full bg-success"></div> Trusted (&gt;0.7)</div>
           <div className="flex items-center gap-2"><div className="w-3 h-3 rounded-full bg-warning"></div> Review (0.3 - 0.7)</div>
           <div className="flex items-center gap-2"><div className="w-3 h-3 rounded-full bg-danger"></div> Untrusted/Locked (&lt;0.3)</div>
@@ -27,7 +27,7 @@ const TrustGraph = () => {
             </div>
             
             {/* Edge line */}
-            <div className="absolute top-1/2 left-1/2 w-8 h-16 border-r-2 border-b-2 border-white/20 -translate-x-1/2 rounded-br-xl"></div>
+            <div className="absolute top-1/2 left-1/2 w-8 h-16 border-r-2 border-b-2 border-black/20 -translate-x-1/2 rounded-br-xl"></div>
           </div>
           
           {/* Model */}
@@ -43,7 +43,7 @@ const TrustGraph = () => {
           <div className="flex gap-8">
             <div className="w-64 bg-surface p-4 rounded-xl border-l-4 border-danger shadow-lg flex flex-col items-center z-10 relative">
               {/* Vertical line up */}
-              <div className="absolute bottom-full left-1/2 w-0.5 h-16 bg-white/20 -translate-x-1/2"></div>
+              <div className="absolute bottom-full left-1/2 w-0.5 h-16 bg-black/20 -translate-x-1/2"></div>
               
               <div className="p-2 bg-danger/10 rounded-full mb-2"><Activity className="w-6 h-6 text-danger" /></div>
               <h4 className="font-bold">Inference REC-001</h4>

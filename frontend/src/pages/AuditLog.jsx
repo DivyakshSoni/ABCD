@@ -19,7 +19,7 @@ const AuditLog = () => {
         <div className="overflow-x-auto">
           <table className="w-full text-left">
             <thead>
-              <tr className="border-b border-white/10 text-textSecondary text-sm uppercase">
+              <tr className="border-b border-black/10 text-textSecondary text-sm uppercase">
                 <th className="pb-3 font-medium">Event Type</th>
                 <th className="pb-3 font-medium">Record ID</th>
                 <th className="pb-3 font-medium">Status</th>
@@ -29,7 +29,7 @@ const AuditLog = () => {
             </thead>
             <tbody>
               {logs.map((log) => (
-                <tr key={log.id} className="border-b border-white/5 hover:bg-white/5 transition-colors">
+                <tr key={log.id} className="border-b border-black/5 hover:bg-black/5 transition-colors">
                   <td className="py-4 font-mono text-sm flex items-center gap-2">
                     {log.type === 'CRYPTO_FAILURE' ? <ShieldAlert className="w-4 h-4 text-danger"/> : <Database className="w-4 h-4 text-primary"/>}
                     {log.type}
