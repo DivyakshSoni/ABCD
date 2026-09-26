@@ -1,0 +1,10 @@
+venv/
+node_modules/
+__pycache__/
+*.pyc
+.env
+data/uploads/
+trusted_keys/
+visiontrust.db
+.DS_Store
+frontend/dist/
