@@ -46,7 +46,7 @@ const PackageUpload = () => {
 
       {!result && !error && (
         <div 
-          className={`card border-2 border-dashed ${file ? 'border-primary bg-primary/5' : 'border-black/20 hover:border-primary/50'} p-12 text-center transition-all cursor-pointer flex flex-col items-center justify-center min-h-[300px]`}
+          className={`card border-2 border-dashed ${file ? 'border-primary bg-primary/5' : 'border-white/20 hover:border-primary/50'} p-12 text-center transition-all cursor-pointer flex flex-col items-center justify-center min-h-[300px]`}
           onDragOver={(e) => e.preventDefault()}
           onDrop={handleDrop}
           onClick={() => document.getElementById('fileUpload').click()}
@@ -85,7 +85,7 @@ const PackageUpload = () => {
             </div>
           ) : (
             <div className="flex flex-col items-center">
-              <div className="w-16 h-16 bg-black/5 rounded-full flex items-center justify-center mb-4">
+              <div className="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mb-4">
                 <UploadCloud className="w-8 h-8 text-textSecondary" />
               </div>
               <h3 className="text-xl font-bold mb-2">Click or drag package to upload</h3>
@@ -124,19 +124,19 @@ const PackageUpload = () => {
             <div className="w-full">
               <h3 className="text-xl font-bold text-success mb-2">Package Uploaded</h3>
               <div className="grid grid-cols-2 gap-4 my-4">
-                <div className="bg-background/50 p-3 rounded-lg border border-black/5">
+                <div className="bg-background/50 p-3 rounded-lg border border-white/5">
                   <p className="text-xs text-textSecondary uppercase tracking-wider mb-1">Package ID</p>
                   <p className="font-mono text-sm">{result.id}</p>
                 </div>
-                <div className="bg-background/50 p-3 rounded-lg border border-black/5">
+                <div className="bg-background/50 p-3 rounded-lg border border-white/5">
                   <p className="text-xs text-textSecondary uppercase tracking-wider mb-1">Status</p>
                   <p className="font-bold text-primary">{result.status}</p>
                 </div>
-                <div className="bg-background/50 p-3 rounded-lg border border-black/5">
+                <div className="bg-background/50 p-3 rounded-lg border border-white/5">
                   <p className="text-xs text-textSecondary uppercase tracking-wider mb-1">Contributor ID</p>
                   <p className="text-sm">{result.contributor_id}</p>
                 </div>
-                <div className="bg-background/50 p-3 rounded-lg border border-black/5">
+                <div className="bg-background/50 p-3 rounded-lg border border-white/5">
                   <p className="text-xs text-textSecondary uppercase tracking-wider mb-1">Signature Validation</p>
                   <p className="text-sm">
                     {result.signature_valid ? 

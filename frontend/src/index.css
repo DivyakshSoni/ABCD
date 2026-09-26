@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #E3F2FD;
-  --color-surface: #90CAF9;
-  --color-secondary: #2196F3;
-  --color-primary: #2196F3;
+  --color-background: #181C14;
+  --color-surface: #3C3D37;
+  --color-secondary: #697565;
+  --color-primary: #ECDFCC;
   --color-success: #10B981;
   --color-warning: #F59E0B;
   --color-danger: #EF4444;
-  --color-textPrimary: #0D47A1;
-  --color-textSecondary: #1565C0;
+  --color-textPrimary: #ECDFCC;
+  --color-textSecondary: #9AA696; /* slightly lighter than secondary for better readability */
 }
 
 @layer base {
@@ -21,7 +21,7 @@
   }
   
   ::selection {
-    background-color: rgba(33, 150, 243, 0.3); /* primary/30 */
+    background-color: rgba(236, 223, 204, 0.3); /* primary/30 */
   }
 }
 
@@ -30,21 +30,21 @@
     background-color: var(--color-surface);
     border-radius: 0.75rem;
     border: 1px solid var(--color-secondary);
-    box-shadow: 0 4px 6px -1px rgb(13 71 161 / 0.1), 0 2px 4px -2px rgb(13 71 161 / 0.1);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.5);
   }
   .btn-primary {
     padding: 0.5rem 1rem;
     background-color: var(--color-primary);
-    color: white;
+    color: #181C14; /* Dark text for light button */
     border-radius: 0.5rem;
-    font-weight: 500;
+    font-weight: 600;
     transition-property: all;
     transition-duration: 200ms;
-    box-shadow: 0 4px 10px rgba(33, 150, 243, 0.4);
+    box-shadow: 0 4px 10px rgba(236, 223, 204, 0.2);
   }
   .btn-primary:hover {
-    background-color: #1E88E5; /* slightly darker primary */
-    box-shadow: 0 6px 15px rgba(33, 150, 243, 0.6);
+    background-color: #DCC6AC; /* slightly darker primary */
+    box-shadow: 0 6px 15px rgba(236, 223, 204, 0.4);
   }
   .btn-secondary {
     padding: 0.5rem 1rem;
